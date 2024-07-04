@@ -72,7 +72,8 @@ class AuthController extends Controller
     public function showProfile()
     {
         $admin = Auth::user();
+        $createdAt = $admin->created_at->format('M j, Y');
 
-        return view('viewProfile')->with('admin', $admin);
+        return view('viewProfile', compact('admin', 'createdAt'));
     }
 }

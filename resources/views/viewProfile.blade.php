@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     @include('header')
     <section class="hero">
@@ -35,6 +37,9 @@
                         <div class="content">
                             <p><strong>Password :</strong> ********</p>
                         </div>
+                        <div class="content">
+                            <p><strong>Created At :</strong> {{ $createdAt }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,4 +47,5 @@
     </section>
     @include('footer')
 </body>
+
 </html>
