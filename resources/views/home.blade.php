@@ -80,7 +80,7 @@
         function createChart(canvasId, labels, datasets) {
             const ctx = document.getElementById(canvasId).getContext('2d');
             const config = {
-                type: 'line',
+                type: 'bar',
                 data: {
                     labels: labels,
                     datasets: datasets,
